@@ -1,6 +1,6 @@
 # Running Switch Toolbox on Linux (with Bottles)
 
-[Switch Toolbox](https://github.com/switchbrew/switch-toolbox) is a Windows application, but it runs well on Linux using **Bottles**. This guide walks you through setting it up.
+[Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox/) is a Windows application, but it runs well on Linux using **Bottles**. This guide walks you through setting it up.
 
 ## 1. Create a New Bottle
 
@@ -26,7 +26,7 @@ Once created, click on your new bottle in the list.
 
 ## 3. Install Switch Toolbox
 
-1. Download the latest release of Switch Toolbox from [GitHub](https://github.com/switchbrew/switch-toolbox/releases).
+1. Download the latest release of Switch Toolbox from [GitHub](https://github.com/KillzXGaming/Switch-Toolbox/releases).
    > **Note:** I used the pre-release `Latest Release-v1.0.376`.
 2. Extract the archive to a location of your choice.
 3. In Bottles, under **Quick Actions**, click **Browse** — this opens your bottle's `drive_c` directory (e.g. `~/.var/app/com.usebottles.bottles/data/bottles/bottles/SwitchModding/drive_c/`).

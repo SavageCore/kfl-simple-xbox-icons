@@ -6,7 +6,7 @@ A mod that replaces the default Nintendo Switch button prompts with Xbox-style i
 
 ## About
 
-Previously, only a [PlayStation icon mod](https://gamebanana.com/mods/500049) existed for this game — now Xbox players can enjoy proper button prompts too!
+Previously, only a [PlayStation icon mod](https://gamebanana.com/mods/500049) existed for this game - now Xbox players can enjoy proper button prompts too!
 
 The mod swaps the Nintendo face button icons (A/B/X/Y) with their Xbox equivalents, so on-screen prompts match the physical layout of your Xbox controller.
 

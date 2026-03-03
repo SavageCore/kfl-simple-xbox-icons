@@ -29,7 +29,7 @@ Once created, click on your new bottle in the list.
 1. Download the latest release of Switch Toolbox from [GitHub](https://github.com/KillzXGaming/Switch-Toolbox/releases).
    > **Note:** I used the pre-release `Latest Release-v1.0.376`.
 2. Extract the archive to a location of your choice.
-3. In Bottles, under **Quick Actions**, click **Browse** — this opens your bottle's `drive_c` directory (e.g. `~/.var/app/com.usebottles.bottles/data/bottles/bottles/SwitchModding/drive_c/`).
+3. In Bottles, under **Quick Actions**, click **Browse** - this opens your bottle's `drive_c` directory (e.g. `~/.var/app/com.usebottles.bottles/data/bottles/bottles/SwitchModding/drive_c/`).
 4. Copy the extracted `Toolbox-Latest` folder into this directory.
 
 ## 4. Add a Shortcut & Launch

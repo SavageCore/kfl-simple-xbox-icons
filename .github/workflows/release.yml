@@ -1,0 +1,40 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Create zip
+        run: cd mod && zip -r ../simple_xbox_icons.zip "Simple Xbox Icons"
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: simple_xbox_icons.zip
+          body: |
+            ## Installation
+
+            1. Download `simple_xbox_icons.zip` below
+            2. Extract the zip into your emulator's mod directory
+            3. Enable the mod and launch the game
+
+            The extracted folder structure should look like:
+            ```
+            Simple Xbox Icons/romfs/lyt/Cmn/BtnIcon/Parts.arc.cmp
+            ```
+
+            <!-- ## Changelog
+            -  -->
+          draft: false
+          prerelease: false

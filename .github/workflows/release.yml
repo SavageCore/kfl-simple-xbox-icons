@@ -16,22 +16,36 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Create zip
-        run: cd mod && zip -r ../simple_xbox_icons.zip "Simple Xbox Icons"
+        run: cd "mod/Simple Xbox Icons" && zip -r "../../Simple Xbox Icons.zip" romfs/
 
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          files: simple_xbox_icons.zip
+          files: Simple Xbox Icons.zip
           body: |
             ## Installation
 
-            1. Download `simple_xbox_icons.zip` below
-            2. Extract the zip into your emulator's mod directory
-            3. Enable the mod and launch the game
+            ### For [Eden](https://git.eden-emu.dev/eden-emu/eden) Emulator
+            1. Download `Simple Xbox Icons.zip` below
+            2. Right-click the game → **Configure Game** → **Import Mod from ZIP**
+            3. Select the downloaded ZIP file
+            4. The mod will auto-detect and install automatically!
 
-            The extracted folder structure should look like:
+            ### Manual Installation (Yuzu/Ryujinx)
+            1. Download `Simple Xbox Icons.zip` below
+            2. Navigate to your emulator's mod directory:
+                - **Yuzu**: Right-click game → **Open Mod Data Location**
+                - **Ryujinx**: Right-click game → **Open Mods Directory**
+            3. Extract the ZIP using "Extract to 'Simple Xbox Icons\'" (creates the proper folder structure)
+            4. Enable the mod and launch the game
+
+            The final folder structure should be either:
             ```
-            Simple Xbox Icons/romfs/lyt/Cmn/BtnIcon/Parts.arc.cmp
+            Ryujinx/mods/contents/01004d300c5ae000/Simple Xbox Icons/romfs/lyt/Cmn/BtnIcon/Parts.arc.cmp
+            ```
+            or
+            ```
+            eden/load/01004D300C5AE000/Simple Xbox Icons/romfs/lyt/Cmn/BtnIcon/Parts.arc.cmp
             ```
 
             <!-- ## Changelog
